@@ -7,4 +7,19 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'demo';
+  items = [
+    {
+      "title": "Orders",
+      "isActive": false
+    },
+    {
+      "title": "Menu",
+      "isActive": true
+    },
+    {
+      "title": "Payout",
+      "isActive": false
+    }
+  ]
 }
+

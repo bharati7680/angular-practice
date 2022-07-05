@@ -1,8 +1,9 @@
 <div class="container">
   <div class="sidebar">
-    <div class="item">
-      <h1 class="">Orders</h1>
-      <span></span>
+    <div class="item" *ngFor="let item of items">      
+      <h1 class="">{{item.title}}
+      </h1>
+      <span *ngIf="item.isActive"></span>
     </div>  
   </div>
   <div class="content"></div>
